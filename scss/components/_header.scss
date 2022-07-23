@@ -1,0 +1,47 @@
+// header
+.header {
+  border-bottom: 1px solid $borderHeaderColor;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__item {
+  display: flex;
+  padding: 0px;
+
+  & + & {
+    margin-left: 50px;
+  }
+}
+
+.header__link {
+  display: inline-flex;
+  align-items: center;
+  margin: 0px;
+
+  color: $primaryTextColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $accentColor;
+  }
+}
+
+.header__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

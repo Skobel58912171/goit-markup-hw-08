@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  color: $primaryTextColor;
+  background-color: $primaryWhiteColor;
+  font-family: $mainFont;
+}
+
+//  base styles
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  color: $titleTextColor;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.subtitle {
+  color: $primaryWhiteColor;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

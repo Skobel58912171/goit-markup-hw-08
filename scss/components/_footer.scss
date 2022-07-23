@@ -1,0 +1,43 @@
+/* footer*/
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footerBgColor;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+
+.footer__logo {
+  display: inline-block;
+  color: $primaryWhiteColor;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.footer__thumb {
+  margin-left: 70px;
+  justify-content: left;
+}
+
+footer__list {
+  margin: 0;
+}
+
+.footer__item {
+  background-color: $footerBgColor;
+}
+
+.footer__link {
+  background-color: $iconBgColor;
+  color: $primaryWhiteColor;
+}
+
+.footer__form {
+  margin-left: auto;
+  margin-bottom: 20px;
+}

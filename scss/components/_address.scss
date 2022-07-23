@@ -1,0 +1,26 @@
+// address footer
+.address {
+  color: $primaryWhiteColor;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__link {
+  transition: color $transitionDuration $transitionTimFunc;
+  display: block;
+  color: $accentWhiteColor;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.address__link--mail {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}

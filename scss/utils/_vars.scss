@@ -1,0 +1,37 @@
+$mainFont: 'Roboto', sans-serif;
+$secondaryFont: 'Raleway', sans-serif;
+
+/* color text and icon */
+
+$primaryTextColor: #757575;
+$titleTextColor: #212121;
+$accentColor: #2196f3;
+$accentWhiteColor: rgba(255, 255, 255, 0.6);
+$primaryWhiteColor: #ffffff;
+$colorPlaceholderModal: rgba(117, 117, 117, 0.5);
+$logoTextColor: #000000;
+$iconColor: #afb1b8;
+
+/* bg color */
+
+$bgColor: #f5f4fa;
+$footerBgColor: #2f303a;
+$heroBgColor: #c4c4c4;
+$heroBgImage: rgba(47, 48, 58, 0.4);
+$workBgImage: rgba(47, 48, 58, 0.8);
+$overlayModalBgColor: rgba(0, 0, 0, 0.2);
+$portfolioBgImage: rgba(33, 150, 243, 0.9);
+$buttonBgColor: #188ce8;
+$iconBgColor: rgb(255, 255, 255, 0.1);
+
+/* borger color */
+$borderColor: #eeeeee;
+$borderHeaderColor: #ececec;
+$borderClientColor: rgba(175, 177, 184, 1);
+$borderClientCurrentColor: rgba(33, 150, 243, 1);
+$borderBtnClose: rgba(0, 0, 0, 0.1);
+$borderInputFooter: rgba(255, 255, 255, 0.3);
+$boderInputModal: rgba(33, 33, 33, 0.2);
+
+$transitionTimFunc: cubic-bezier(0.4, 0, 0.2, 1);
+$transitionDuration: 250ms;

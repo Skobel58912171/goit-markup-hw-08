@@ -1,0 +1,49 @@
+/* buttons */
+.btn {
+  transition: color $transitionDuration $transitionTimFunc,
+    background-color $transitionDuration $transitionTimFunc,
+    box-shadow $transitionDuration $transitionTimFunc;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 0px;
+
+  color: $titleTextColor;
+  background-color: $bgColor;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: $primaryWhiteColor;
+    background-color: $accentColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.btn--shadow {
+  transition: background-color $transitionDuration $transitionTimFunc;
+
+  display: inline-block;
+  padding: 10px 32px;
+
+  color: $primaryWhiteColor;
+  background-color: $accentColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  &:hover,
+  &:focus {
+    background-color: $buttonBgColor;
+  }
+}

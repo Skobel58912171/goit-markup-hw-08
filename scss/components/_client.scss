@@ -1,0 +1,29 @@
+// section client
+
+.client__item {
+  width: 170px;
+  height: 92px;
+}
+
+.client__link {
+  transition: color $transitionDuration $transitionTimFunc,
+    border $transitionDuration $transitionTimFunc;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  color: $iconColor;
+  border: 1px solid $borderClientColor;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    border: 1px solid $borderClientCurrentColor;
+  }
+}
+
+.client__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,33 @@
+// section  feature
+
+.feature__item {
+  width: 270px;
+}
+
+.feature__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $bgColor;
+  border-radius: 4px;
+}
+
+.feature__title {
+  margin-bottom: 10px;
+
+  color: $titleTextColor;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.feature__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
