@@ -14,6 +14,44 @@
   align-items: center;
 }
 
+.menu__btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__btn .menu__icon--close {
+  display: none;
+}
+
+.menu__btn.is-open .menu__icon--close {
+  display: block;
+}
+
+.menu__btn.is-open .menu__icon--open {
+  display: none;
+}
+
+.menu__container {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  height: 796px;
+
+  background-color: $primaryWhiteColor;
+  padding: 50px 40px;
+  text-align: center;
+
+  &.is-open {
+    display: block;
+  }
+}
+
 .header__item {
   display: flex;
   padding: 0px;
