@@ -1,5 +1,6 @@
 .menu {
   position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
   @media screen and (min-width: 767px) {
@@ -20,11 +21,24 @@
   }
 }
 .menu__btn {
+  z-index: 1;
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+.menu__btn .menu__icon--close {
+  display: none;
+}
+
+.menu__btn.is-open .menu__icon--close {
+  display: block;
+}
+
+.menu__btn.is-open .menu__icon--open {
+  display: none;
 }
 
 .menu__icon--close {
@@ -46,11 +60,12 @@
 .menu__container {
   display: none;
 
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 100%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 796px;
+  transform: translateY(-40px);
 
   background-color: $primaryWhiteColor;
   padding: 50px 40px;
