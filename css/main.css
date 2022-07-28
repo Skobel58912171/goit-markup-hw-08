@@ -287,6 +287,8 @@ img {
 
 .menu {
   position: relative;
+  padding: 0;
+  margin: 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,7 +304,7 @@ img {
 }
 
 .menu__logo {
-  margin-right: 276px;
+  margin-right: auto;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -379,4 +381,67 @@ img {
   .menu__container {
     display: none;
   }
+}
+
+.menu__nav {
+  display: contents;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.menu__link--current {
+  color: #2196f3;
+}
+
+.menu__item {
+  margin-bottom: 30px;
+}
+.menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.menu__contatcts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 64px;
+  margin-top: 302px;
+}
+.menu__contatcts .menu__link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.menu__contatcts .menu__link--mail {
+  font-size: 24px;
+  line-height: 1.17;
+  color: #757575;
+}
+
+.menu__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.menu__socials .menu__link {
+  font-size: 18px;
+  line-height: 1.22;
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
