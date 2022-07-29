@@ -28,8 +28,15 @@
   @media screen and (min-width: 767px) {
     display: flex;
     padding: 0px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
+
   @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
     & + & {
       margin-left: 50px;
     }
@@ -54,12 +61,31 @@
     &:focus,
     &:hover {
       color: $accentColor;
-      fill: $accentColor;
     }
   }
 }
 .header__icon {
   @media screen and (min-width: 767px) {
     margin-right: 10px;
+    width: 10px;
+    height: 14px;
+    fill: currentColor;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    height: 16px;
+  }
+}
+
+.header__icon--mail {
+  @media screen and (min-width: 767px) {
+    margin-right: 10px;
+    width: 14px;
+    height: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
   }
 }

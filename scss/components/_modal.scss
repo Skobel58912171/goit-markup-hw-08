@@ -26,9 +26,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform $transitionDuration $transitionTimFunc;
+  width: 450px;
+  height: 609px;
 
-  width: 528px;
-  height: 581px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__btn {
   position: absolute;
@@ -153,12 +157,16 @@
   margin-top: 10px;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   &::after {
     content: '';
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
