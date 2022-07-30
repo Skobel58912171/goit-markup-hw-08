@@ -1,6 +1,7 @@
 // header
 .header {
   border-bottom: 1px solid $borderHeaderColor;
+  position: relative;
 }
 
 .header__container {
@@ -14,6 +15,7 @@
     margin-left: auto;
     display: flex;
     flex-direction: column;
+    gap: 0;
   }
 
   @media screen and (min-width: 1200px) {

@@ -1,7 +1,19 @@
 // section  feature
 
 .feature__item {
-  width: 270px;
+  &:not(:last-child) {
+    display: block;
+    width: 450px;
+    height: 226px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 767px) {
+    --items: 2;
+    height: 251px;
+  }
+  @media screen and (min-width: 1200px) {
+    --items: 4;
+  }
 }
 
 .feature__thumb {
@@ -30,5 +42,5 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var($primaryTextColor);
+  color: $primaryTextColor;
 }
