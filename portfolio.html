@@ -21,75 +21,74 @@
     <header class="header">
       <div class="header__container container">
         <a href="" lang="en" class="logo link"><span class="logo__text">Web</span>Studio</a>
-        <div class="menu">
-          <a href="" lang="en" class="menu__logo link"><span class="logo__text">Web</span>Studio</a>
-          <button
-            type="button"
-            class="menu__btn"
-            aria-expanded="false"
-            aria-controls="menu__container"
-            data-menu-button
-          >
-            <svg width="40" height="40">
-              <use href="./images/symbol-defs.svg#icon-menu_mob" class="menu__icon--open"></use>
-              <use href="./images/symbol-defs.svg#icon-close_mob" class="menu__icon--close"></use>
-            </svg>
-          </button>
-          <div class="menu__container" id="menu__container" data-menu>
-            <ul class="menu__nav">
-              <li class="menu__item">
-                <a href="./index.html" class="menu__link link">Студия </a>
-              </li>
-              <li class="menu__item">
-                <a href="./portfolio.html" class="menu__link menu__link--current link">Портфолио</a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="menu__link link">Контакты</a>
-              </li>
-            </ul>
-            <ul class="menu__contatcts">
-              <li class="menu__item">
-                <a href="tel:+380961111111" class="menu__link link">+38 096 111 11 11</a>
-              </li>
-              <li class="menu__item">
-                <a href="mailto:info@devstudio.com" class="menu__link menu__link--mail link"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="menu__socials">
-              <li class="menu__item">
-                <a href="" class="menu__link link">Instagram </a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="menu__link link">Twitter</a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="menu__link link">Facebook</a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="menu__link link">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
+
+        <button
+          type="button"
+          class="menu__btn"
+          aria-expanded="false"
+          aria-controls="menu__container"
+          data-menu-button
+        >
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu_mob" class="menu__icon--open"></use>
+            <use href="./images/symbol-defs.svg#icon-close_mob" class="menu__icon--close"></use>
+          </svg>
+        </button>
+        <div class="menu__container" id="menu__container" data-menu>
+          <ul class="menu__nav">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link link">Студия </a>
+            </li>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link menu__link--current link">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="menu__contatcts">
+            <li class="menu__item">
+              <a href="tel:+380961111111" class="menu__link link">+38 096 111 11 11</a>
+            </li>
+            <li class="menu__item">
+              <a href="mailto:info@devstudio.com" class="menu__link menu__link--mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu__socials">
+            <li class="menu__item">
+              <a href="" class="menu__link link">Instagram </a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link link">Twitter</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link link">Facebook</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link link">LinkedIn</a>
+            </li>
+          </ul>
         </div>
+
         <nav class="site-nav">
           <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link link">Студия</a>
             </li>
-            <li class="header__item">
+            <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link site-nav__link--current link"
                 >Портфолио</a
               >
             </li>
-            <li class="header__item"><a href="" class="site-nav__link link">Контакты</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="header__list list">
           <li class="header__item">
             <a href="mailto:info@devstudio.com" class="header__link link">
-              <svg class="header__icon" width="16" height="12">
+              <svg class="header__icon--mail">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -97,7 +96,7 @@
           </li>
           <li class="header__item">
             <a href="tel:+380961111111" class="header__link link">
-              <svg class="header__icon" width="10" height="16">
+              <svg class="header__icon">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -129,10 +128,28 @@
             </li>
           </ul>
           <ul class="projects list">
-            <li class="projects__item">
+            <li class="projects__item item">
               <a href="#" class="projects__link link">
                 <div class="projects__thumb">
-                  <img src="./images/img1.jpg" alt="example1" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/img1.jpg 450w, ./images/mobile/img1@2x.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="./images/tablet/img1.jpg 354w, ./images/tablet/img1@2x.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="./images/desktop/img1.jpg 270w, ./images/desktop/img1@2x.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 100vw"
+                    />
+                    <img src="./images/mobile/img1.jpg" alt="example1" />
+                  </picture>
+
                   <div class="projects__overlay">
                     <p class="projects__subtitle">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -147,10 +164,28 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item item">
               <a href="#" class="projects__link link">
                 <div class="projects__thumb">
-                  <img src="./images/img2.jpg" alt="example2" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/img2.jpg 450w, ./images/mobile/img2@2x.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="./images/tablet/img2.jpg 354w, ./images/tablet/img2@2x.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="./images/desktop/img2.jpg 270w, ./images/desktop/img2@2x.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 100vw"
+                    />
+                    <img src="./images/mobile/img2.jpg" alt="example2" />
+                  </picture>
+
                   <div class="projects__overlay">
                     <p class="projects__subtitle">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -167,10 +202,28 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item item">
               <a href="#" class="projects__link link">
                 <div class="projects__thumb">
-                  <img src="./images/img3.jpg" alt="example3" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/img3.jpg 450w, ./images/mobile/img3@2x.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="./images/tablet/img3.jpg 354w, ./images/tablet/img3@2x.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="./images/desktop/img3.jpg 270w, ./images/desktop/img3@2x.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 100vw"
+                    />
+                    <img src="./images/mobile/img3.jpg" alt="example3" />
+                  </picture>
+
                   <div class="projects__overlay">
                     <p class="projects__subtitle">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -185,10 +238,28 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item item">
               <a href="#" class="projects__link link">
                 <div class="projects__thumb">
-                  <img src="./images/img4.jpg" alt="example4" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/img4.jpg 450w, ./images/mobile/img4@2x.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="./images/tablet/img4.jpg 354w, ./images/tablet/img4@2x.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="./images/desktop/img4.jpg 270w, ./images/desktop/img4@2x.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 100vw"
+                    />
+                    <img src="./images/mobile/img4.jpg" alt="example4" />
+                  </picture>
+
                   <div class="projects__overlay">
                     <p class="projects__subtitle">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -203,10 +274,28 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item item">
               <a href="#" class="projects__link link">
                 <div class="projects__thumb">
-                  <img src="./images/img5.jpg" alt="example5" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/img5.jpg 450w, ./images/mobile/img5@2x.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="./images/tablet/img5.jpg 354w, ./images/tablet/img5@2x.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="./images/desktop/img5.jpg 270w, ./images/desktop/img5@2x.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 100vw"
+                    />
+                    <img src="./images/mobile/img5.jpg" alt="example5" />
+                  </picture>
+
                   <div class="projects__overlay">
                     <p class="projects__subtitle">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -221,10 +310,28 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item item">
               <a href="#" class="projects__link link">
                 <div class="projects__thumb">
-                  <img src="./images/img6.jpg" alt="example6" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/img6.jpg 450w, ./images/mobile/img6@2x.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="./images/tablet/img6.jpg 354w, ./images/tablet/img6@2x.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="./images/desktop/img6.jpg 270w, ./images/desktop/img6@2x.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 100vw"
+                    />
+                    <img src="./images/mobile/img6.jpg" alt="example6" />
+                  </picture>
+
                   <div class="projects__overlay">
                     <p class="projects__subtitle">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -239,10 +346,28 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item item">
               <a href="#" class="projects__link link">
                 <div class="projects__thumb">
-                  <img src="./images/img7.jpg" alt="example7" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/img7.jpg 450w, ./images/mobile/img7@2x.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="./images/tablet/img7.jpg 354w, ./images/tablet/img7@2x.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="./images/desktop/img7.jpg 270w, ./images/desktop/img7@2x.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 100vw"
+                    />
+                    <img src="./images/mobile/img7.jpg" alt="example7" />
+                  </picture>
+
                   <div class="projects__overlay">
                     <p class="projects__subtitle">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -257,10 +382,28 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item item">
               <a href="#" class="projects__link link">
                 <div class="projects__thumb">
-                  <img src="./images/img8.jpg" alt="example8" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/img8.jpg 450w, ./images/mobile/img8@2x.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="./images/tablet/img8.jpg 354w, ./images/tablet/img8@2x.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="./images/desktop/img8.jpg 270w, ./images/desktop/img8@2x.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 100vw"
+                    />
+                    <img src="./images/mobile/img8.jpg" alt="example8" />
+                  </picture>
+
                   <div class="projects__overlay">
                     <p class="projects__subtitle">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -275,10 +418,28 @@
                 </div>
               </a>
             </li>
-            <li class="projects__item">
+            <li class="projects__item item">
               <a href="#" class="projects__link link">
                 <div class="projects__thumb">
-                  <img src="./images/img9.jpg" alt="example9" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/mobile/img9.jpg 450w, ./images/mobile/img9@2x.jpg 900w"
+                      media="(max-width: 767px)"
+                      sizes="(min-width: 480px) 450px, 100vw"
+                    />
+                    <source
+                      srcset="./images/tablet/img9.jpg 354w, ./images/tablet/img9@2x.jpg 708w"
+                      media="(max-width: 1199px)"
+                      sizes="(min-width: 768px) 354px, 100vw"
+                    />
+                    <source
+                      srcset="./images/desktop/img9.jpg 270w, ./images/desktop/img9@2x.jpg 540w"
+                      media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 270px, 100vw"
+                    />
+                    <img src="./images/mobile/img9.jpg" alt="example9" />
+                  </picture>
+
                   <div class="projects__overlay">
                     <p class="projects__subtitle">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -299,7 +460,7 @@
     </main>
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer-adress">
+        <div class="footer-address">
           <a href="" lang="en" class="logo footer__logo link"
             ><span class="logo__text">Web</span>Studio</a
           >
@@ -313,7 +474,7 @@
         </div>
         <div class="footer__thumb">
           <b class="subtitle">присоединяйтесь</b>
-          <ul class="socials list">
+          <ul class="socials__list">
             <li class="footer__item socials__item">
               <a
                 class="socials__link footer__link link"
@@ -384,5 +545,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

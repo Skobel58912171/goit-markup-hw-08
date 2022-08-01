@@ -241,17 +241,35 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work__list list">
             <li class="work__item item">
-              <img src="./images/box1.jpg" alt="работа на клавиатуре" width="370" height="294" />
+              <img
+                srcset="./images/desktop/box1.jpg, ./images/desktop/box1@2x.jpg"
+                src="./images/desktop/box1.jpg"
+                alt="работа на клавиатуре"
+                width="370"
+                height="294"
+              />
               <div class="work__thumb"><b class="subtitle">десктопные приложения</b></div>
             </li>
             <li class="work__item item">
-              <img src="./images/box2.jpg" alt="работа на ноутбуке" width="370" height="294" />
+              <img
+                srcset="./images/desktop/box2.jpg, ./images/desktop/box2@2x.jpg"
+                src="./images/desktop/box2.jpg"
+                alt="работа на ноутбуке"
+                width="370"
+                height="294"
+              />
               <div class="work__thumb">
                 <b class="subtitle">мобильные приложения</b>
               </div>
             </li>
             <li class="work__item item">
-              <img src="./images/box3.jpg" alt="работа на планшете" width="370" height="294" />
+              <img
+                srcset="/images/desktop/box3.jpg, /images/desktop/box3@2x.jpg"
+                src="./images/desktop/box3.jpg"
+                alt="работа на планшете"
+                width="370"
+                height="294"
+              />
               <div class="work__thumb">
                 <b class="subtitle">дизайнерские решения</b>
               </div>
@@ -265,11 +283,31 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list">
             <li class="team__item item">
-              <img src="./images/img.jpg" alt="Photo Product Designer" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/mobile/teamcard1.jpg 450w, ./images/mobile/teamcard1@2x.jpg 900w"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="./images/tablet/teamcard1.jpg 354w, ./images/tablet/teamcard1@2x.jpg 708w"
+                  media="(max-width: 1199px)"
+                  sizes="(min-width: 768px) 354px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/teamcard1.jpg    270w,
+                    ./images/desktop/teamcard1@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 100vw"
+                />
+                <img src="./images/mobile/teamcard1.jpg" alt="Photo Product Designer" />
+              </picture>
               <div class="team__group">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
-                <ul class="socials list">
+                <ul class="socials__list list">
                   <li class="socials__item">
                     <a
                       class="socials__link link"
@@ -322,16 +360,32 @@
               </div>
             </li>
             <li class="team__item item">
-              <img
-                src="./images/img(1).jpg"
-                alt="Photo Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/mobile/teamcard2.jpg 450w, ./images/mobile/teamcard2@2x.jpg 900w"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="./images/tablet/teamcard2.jpg 354w, ./images/tablet/teamcard2@2x.jpg 708w"
+                  media="(max-width: 1199px)"
+                  sizes="(min-width: 768px) 354px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/teamcard2.jpg    270w,
+                    ./images/desktop/teamcard2@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 100vw"
+                />
+                <img src="./images/mobile/teamcard2.jpg" alt="Photo Frontend Developer" />
+              </picture>
+
               <div class="team__group">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
-                <ul class="socials list">
+                <ul class="socials__list list">
                   <li class="socials__item">
                     <a
                       class="socials__link link"
@@ -384,16 +438,32 @@
               </div>
             </li>
             <li class="team__item item">
-              <img
-                src="./images/img(2).jpg"
-                alt="Photo Product Marketinger"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/mobile/teamcard3.jpg 450w, ./images/mobile/teamcard3@2x.jpg 900w"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="./images/tablet/teamcard3.jpg 354w, ./images/tablet/teamcard3@2x.jpg 708w"
+                  media="(max-width: 1199px)"
+                  sizes="(min-width: 768px) 354px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/teamcard3.jpg    270w,
+                    ./images/desktop/teamcard3@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 100vw"
+                />
+                <img src="./images/mobile/teamcard3.jpg" alt="Photo Product Marketinger" />
+              </picture>
+
               <div class="team__group">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
-                <ul class="socials list">
+                <ul class="socials__list list">
                   <li class="socials__item">
                     <a
                       class="socials__link link"
@@ -446,11 +516,32 @@
               </div>
             </li>
             <li class="team__item item">
-              <img src="./images/img(3).jpg" alt="Photo UI Designer" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/mobile/teamcard4.jpg 450w, ./images/mobile/teamcard4@2x.jpg 900w"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="./images/tablet/teamcard4.jpg 354w, ./images/tablet/teamcard4@2x.jpg 708w"
+                  media="(max-width: 1199px)"
+                  sizes="(min-width: 768px) 354px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/teamcard4.jpg    270w,
+                    ./images/desktop/teamcard4@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px, 100vw"
+                />
+                <img src="./images/mobile/teamcard4.jpg" alt="Photo UI Designer" />
+              </picture>
+
               <div class="team__group">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>
-                <ul class="socials list">
+                <ul class="socials__list list">
                   <li class="socials__item">
                     <a
                       class="socials__link link"
