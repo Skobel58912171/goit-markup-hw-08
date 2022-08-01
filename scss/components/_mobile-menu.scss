@@ -22,19 +22,21 @@
 .menu__btn.is-open .menu__icon--open {
   display: none;
 }
-.menu__icon {
+
+.menu__icon--close {
+  fill: $titleTextColor;
   &:focus,
   &:hover {
     fill: $accentColor;
   }
 }
 
-.menu__icon--close {
-  fill: $titleTextColor;
-}
-
 .menu__icon--open {
   fill: $logoTextColor;
+  &:focus,
+  &:hover {
+    fill: $accentColor;
+  }
 }
 
 .menu__container {
