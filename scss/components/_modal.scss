@@ -12,6 +12,7 @@
   opacity: 1;
   transition: opacity $transitionDuration $transitionTimFunc,
     visibility $transitionDuration $transitionTimFunc;
+    overflow-y: scroll;
 
   &.is-hidden {
     opacity: 0;
@@ -27,11 +28,12 @@
   transform: translate(-50%, -50%);
   transition: transform $transitionDuration $transitionTimFunc;
   width: 450px;
-  height: 609px;
+
+  max-height: 609px;
 
   @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 .modal__btn {

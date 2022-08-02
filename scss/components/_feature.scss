@@ -1,16 +1,12 @@
 // section  feature
 
 .feature__item {
-  display: block;
-  text-align: start;
-  width: 450px;
-  height: 226px;
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  --items: 1;
+  max-height: 226px;
+
   @media screen and (min-width: 767px) {
     --items: 2;
-    height: 251px;
+    max-height: 251px;
   }
   @media screen and (min-width: 1200px) {
     --items: 4;

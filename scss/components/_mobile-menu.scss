@@ -1,6 +1,6 @@
 .menu__btn {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   display: inline-flex;
   padding: 0;
   border: none;
@@ -40,6 +40,7 @@
 }
 
 .menu__container {
+  z-index: 4;
   display: none;
 
   position: fixed;

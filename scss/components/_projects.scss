@@ -1,11 +1,7 @@
 //Projects portfolio
-. .projects__item {
-  display: block;
-  width: 450px;
+.projects__item {
+  --items: 1;
   height: 404px;
-  &:not(:last child) {
-    margin-bottom: 30px;
-  }
 
   @media screen and (min-width: 767px) {
     height: 440px;
@@ -19,6 +15,8 @@
 
 .projects__link {
   transition: box-shadow $transitionDuration $transitionTimFunc;
+  width: 100%;
+  height: 100%;
   display: block;
   text-decoration: none;
 
