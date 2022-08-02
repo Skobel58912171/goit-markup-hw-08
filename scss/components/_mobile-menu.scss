@@ -23,17 +23,8 @@
   display: none;
 }
 
-.menu__icon--close {
+.menu__icon {
   fill: $titleTextColor;
-  transition: fill $transitionDuration $transitionTimFunc;
-  &:focus,
-  &:hover {
-    fill: $accentColor;
-  }
-}
-
-.menu__icon--open {
-  fill: $logoTextColor;
   transition: fill $transitionDuration $transitionTimFunc;
   &:focus,
   &:hover {
