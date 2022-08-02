@@ -4,11 +4,13 @@
   height: 404px;
 
   @media screen and (min-width: 767px) {
-    height: 440px;
     --items: 2;
+    &:nth-child(-n + 2) {
+      height: 440px;
+    }
   }
   @media screen and (min-width: 1200px) {
-    height: 404px;
+    height: 404;
     --items: 3;
   }
 }
@@ -62,6 +64,15 @@
   border-left: 1px solid $borderColor;
   border-right: 1px solid $borderColor;
   border-bottom: 1px solid $borderColor;
+}
+
+.projects__content--first {
+  @media screen and (min-width: 767px) {
+    padding: 20px 24px 56px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 20px 24px;
+  }
 }
 .projects__title {
   margin-top: 0;
