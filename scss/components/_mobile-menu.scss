@@ -25,6 +25,7 @@
 
 .menu__icon--close {
   fill: $titleTextColor;
+  transition: fill $transitionDuration $transitionTimFunc;
   &:focus,
   &:hover {
     fill: $accentColor;
@@ -33,6 +34,7 @@
 
 .menu__icon--open {
   fill: $logoTextColor;
+  transition: fill $transitionDuration $transitionTimFunc;
   &:focus,
   &:hover {
     fill: $accentColor;
