@@ -351,6 +351,12 @@ ul {
   padding: 0;
   border: none;
   background-color: transparent;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__btn:focus, .menu__btn:hover {
+  color: #2196f3;
 }
 @media screen and (min-width: 767px) {
   .menu__btn {
@@ -371,12 +377,7 @@ ul {
 }
 
 .menu__icon {
-  fill: #212121;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu__icon:focus, .menu__icon:hover {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 .menu__container {
