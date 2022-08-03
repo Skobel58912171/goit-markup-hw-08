@@ -5,6 +5,7 @@
 
 .header__container {
   position: relative;
+
   display: flex;
   align-items: center;
 }
@@ -48,6 +49,7 @@
 .header__link {
   display: none;
   @media screen and (min-width: 767px) {
+    transition: color $transitionDuration $transitionTimFunc;
     display: inline-flex;
     align-items: center;
     margin: 0px;

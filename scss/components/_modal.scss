@@ -12,7 +12,7 @@
   opacity: 1;
   transition: opacity $transitionDuration $transitionTimFunc,
     visibility $transitionDuration $transitionTimFunc;
-    overflow-y: scroll;
+  overflow-y: scroll;
 
   &.is-hidden {
     opacity: 0;
@@ -22,14 +22,19 @@
 }
 
 .modal {
+  z-index: 10;
+  width: 100%;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform $transitionDuration $transitionTimFunc;
-  width: 450px;
 
-  max-height: 609px;
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
 
   @media screen and (min-width: 1200px) {
     max-width: 528px;
@@ -65,12 +70,16 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 450px;
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: $primaryWhiteColor;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+  }
 }
 
 .modal-form__title {

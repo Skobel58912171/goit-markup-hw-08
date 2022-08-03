@@ -1,12 +1,18 @@
 .menu__btn {
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 25%);
+
   z-index: 5;
   display: inline-flex;
   padding: 0;
   border: none;
   background-color: transparent;
   color: $titleTextColor;
+
   transition: color $transitionDuration $transitionTimFunc;
+
   &:focus,
   &:hover {
     color: $accentColor;
@@ -46,11 +52,13 @@
   padding: 50px 40px;
 
   text-align: left;
-
-  &.is-open {
-    display: flex;
-    flex-direction: column;
+  @media screen and (max-width: 768px) {
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+    }
   }
+
   @media screen and (min-width: 767px) {
     display: none;
   }
@@ -59,16 +67,22 @@
 .menu__nav {
   display: contents;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .menu__link {
+  position: relative;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.02em;
   color: $titleTextColor;
-  &--current {
+  transition: color $transitionDuration $transitionTimFunc;
+
+  &--current,
+  &:hover,
+  &:focus {
     color: $accentColor;
   }
 }
@@ -83,6 +97,7 @@
 .menu__contatcts {
   display: flex;
   flex-direction: column;
+
   margin-bottom: 64px;
   margin-top: 302px;
   & .menu__link {
@@ -90,22 +105,38 @@
     font-size: 34px;
     line-height: 40px;
     letter-spacing: 0.02em;
-    color: $accentColor;
+    color: $primaryTextColor;
+    transition: color $transitionDuration $transitionTimFunc;
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
   }
   & .menu__link--mail {
     font-size: 24px;
     line-height: 1.17;
     color: $primaryTextColor;
+    transition: color $transitionDuration $transitionTimFunc;
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
   }
 }
 
 .menu__socials {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 
   & .menu__link {
     font-size: 18px;
     line-height: 1.22;
-    color: $accentColor;
+    color: $primaryTextColor;
+    transition: color $transitionDuration $transitionTimFunc;
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
   }
 }
