@@ -33,6 +33,9 @@
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-align: center;
+  @media screen and (min-width: 767px) {
+    text-align: start;
+  }
 }
 
 .feature__text {

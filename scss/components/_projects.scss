@@ -6,11 +6,17 @@
   @media screen and (min-width: 767px) {
     --items: 2;
     &:nth-child(-n + 2) {
-      height: 440px;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 440px;
+
+      & .projects__content {
+        flex-grow: 1;
+      }
     }
   }
   @media screen and (min-width: 1200px) {
-    height: 404;
+    height: 404px;
     --items: 3;
   }
 }
@@ -66,14 +72,6 @@
   border-bottom: 1px solid $borderColor;
 }
 
-.projects__content--first {
-  @media screen and (min-width: 767px) {
-    padding: 20px 24px 56px 24px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 20px 24px;
-  }
-}
 .projects__title {
   margin-top: 0;
   margin-bottom: 4px;

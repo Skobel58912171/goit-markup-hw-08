@@ -1,8 +1,10 @@
 // hero section
 .hero {
-  max-width: 480px;
-  max-height: 400px;
+  max-width: 1600px;
+  min-height: 400px;
+
   padding: 118px 0;
+  margin: 0 auto;
 
   background-color: $heroBgColor;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -20,9 +22,7 @@
     background-image: url(../../images/mobile/hero2x.jpg);
   }
 
-  @media screen and (min-width: 480px) {
-    max-width: 768px;
-
+  @media screen and (min-width: 481px) and (max-widt: 768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../images/tablet/hero1x.jpg);
 
@@ -32,10 +32,7 @@
       background-image: url(../../images/tablet/hero2x.jpg);
     }
   }
-  @media screen and (min-width: 768px) {
-    max-width: 1600px;
-    max-height: 600px;
-    padding: 200px 0;
+  @media screen and (min-width: 769px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../images/desktop/hero1x.jpg);
 
@@ -44,6 +41,9 @@
       screen and (min-resolution: 2dppx) {
       background-image: url(../../images/desktop/hero2x.jpg);
     }
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
   }
 }
 
