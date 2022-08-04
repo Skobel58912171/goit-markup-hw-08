@@ -99,7 +99,7 @@
   flex-direction: column;
 
   margin-bottom: 64px;
-  margin-top: 302px;
+  margin-top: auto;
   & .menu__link {
     font-weight: 500;
     font-size: 34px;
@@ -129,14 +129,19 @@
   flex-wrap: wrap;
   gap: 20px;
 
+  & .menu__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid $boderInputModal;
+  }
   & .menu__link {
     font-size: 18px;
     line-height: 1.22;
-    color: $primaryTextColor;
-    transition: color $transitionDuration $transitionTimFunc;
-    &:hover,
-    &:focus {
-      color: $accentColor;
-    }
+    color: $accentColor;
+    // transition: color $transitionDuration $transitionTimFunc;
+
+    // &:hover,
+    // &:focus {
+    //   color: $accentColor;
+    // }
   }
 }
