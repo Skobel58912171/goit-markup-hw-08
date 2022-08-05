@@ -127,12 +127,16 @@
 .menu__socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
 
   & .menu__item:not(:last-child) {
     padding-right: 10px;
     border-right: 1px solid $boderInputModal;
   }
+
+  & .menu__item:not(:first-child) {
+    padding-left: 9px;
+  }
+
   & .menu__link {
     font-size: 18px;
     line-height: 1.22;

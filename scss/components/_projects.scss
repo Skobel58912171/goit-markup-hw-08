@@ -10,26 +10,24 @@
   @media screen and (min-width: 767px) {
     --items: 2;
     &:nth-child(-n + 2) {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 440px;
-
-      & .projects__content {
-        flex-grow: 1;
-      }
+      height: 440px;
     }
   }
   @media screen and (min-width: 1200px) {
-    height: 404px;
     --items: 3;
+    &:nth-child(-n + 2) {
+      height: 404px;
+    }
   }
 }
 
 .projects__link {
   transition: box-shadow $transitionDuration $transitionTimFunc;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  display: block;
+
   text-decoration: none;
 
   &:hover,
@@ -39,6 +37,9 @@
   }
   &:hover .projects__overlay {
     transform: translateY(0);
+  }
+  & > .projects__content {
+    flex-grow: 1;
   }
 }
 
