@@ -1,9 +1,5 @@
 .menu__btn {
-  position: fixed;
-  top: 0;
-  right: 0;
-  transform: translate(-50%, 25%);
-
+  position: relative;
   z-index: 5;
   display: inline-flex;
   padding: 0;
@@ -12,7 +8,12 @@
   color: $titleTextColor;
 
   transition: color $transitionDuration $transitionTimFunc;
-
+  &.is-open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 25%);
+  }
   &:focus,
   &:hover {
     color: $accentColor;
