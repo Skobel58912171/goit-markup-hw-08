@@ -72,36 +72,24 @@
 }
 
 .menu__link {
-  @media screen and (max-width: 440px) {
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: $titleTextColor;
-    transition: color $transitionDuration $transitionTimFunc;
+  font-weight: 500;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $titleTextColor;
+  transition: color $transitionDuration $transitionTimFunc;
 
-    &--current,
-    &:hover,
-    &:focus {
-      color: $accentColor;
-    }
+  &--current,
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+  @media screen and (max-width: 440px) {
+    font-size: 30px;
   }
 
   @media screen and (min-width: 440px) {
-    font-weight: 500;
     font-size: 40px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: $titleTextColor;
-    transition: color $transitionDuration $transitionTimFunc;
-
-    &--current,
-    &:hover,
-    &:focus {
-      color: $accentColor;
-    }
   }
 }
 
@@ -119,29 +107,20 @@
   margin-bottom: 64px;
   margin-top: auto;
   & .menu__link {
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: $primaryTextColor;
+    transition: color $transitionDuration $transitionTimFunc;
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
     @media screen and (max-width: 440px) {
-      font-weight: 500;
       font-size: 24px;
-      line-height: 40px;
-      letter-spacing: 0.02em;
-      color: $primaryTextColor;
-      transition: color $transitionDuration $transitionTimFunc;
-      &:hover,
-      &:focus {
-        color: $accentColor;
-      }
     }
     @media screen and (min-width: 440px) {
-      font-weight: 500;
       font-size: 34px;
-      line-height: 40px;
-      letter-spacing: 0.02em;
-      color: $primaryTextColor;
-      transition: color $transitionDuration $transitionTimFunc;
-      &:hover,
-      &:focus {
-        color: $accentColor;
-      }
     }
   }
   & .menu__link--mail {
@@ -170,15 +149,13 @@
   }
 
   & .menu__link {
+    line-height: 1.22;
+    color: $accentColor;
     @media screen and (max-width: 440px) {
       font-size: 10px;
-      line-height: 1.22;
-      color: $accentColor;
     }
     @media screen and (min-width: 440px) {
       font-size: 18px;
-      line-height: 1.22;
-      color: $accentColor;
     }
   }
 }

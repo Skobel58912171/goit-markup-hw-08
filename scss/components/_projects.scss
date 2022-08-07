@@ -67,9 +67,14 @@
 .projects__subtitle {
   color: $primaryWhiteColor;
   font-weight: 400;
-  font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+  @media screen and (max-width: 440px) {
+    font-size: 15px;
+  }
+  @media screen and (min-width: 440px) {
+    font-size: 18px;
+  }
 }
 
 .projects__content {
